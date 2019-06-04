@@ -1,9 +1,10 @@
-const rule = require("../../../lib/rules/no-generic-identifier")
+const base = require("../../../lib/rules/base")
 const RuleTester = require("eslint").RuleTester
 
+const noPresentation = base(["Presentation", "presentation"])
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2015 } });
 
-ruleTester.run("no-generic-identifier", rule, {
+ruleTester.run("presentation", noPresentation, {
   valid: [
     {            
       code: "var foo = true"
