@@ -22,5 +22,17 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d7my11/eslint-plugin-no-generic-identifier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/d7my11/eslint-plugin-no-generic-identifier/issues"
+  },
+  "homepage": "https://github.com/d7my11/eslint-plugin-no-generic-identifier#readme"
 }

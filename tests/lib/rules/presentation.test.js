@@ -1,10 +1,9 @@
-const base = require("../../../lib/rules/base")
+const rule = require("../../../lib/rules/presentation")
 const RuleTester = require("eslint").RuleTester
 
-const noPresentation = base(["Presentation", "presentation"])
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2015 } });
 
-ruleTester.run("presentation", noPresentation, {
+ruleTester.run("presentation", rule, {
   valid: [
     {            
       code: "var foo = true"
