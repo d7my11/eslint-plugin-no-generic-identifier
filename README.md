@@ -6,12 +6,24 @@ Disallow generic declarations/assignments
 
 You'll first need to install [ESLint](http://eslint.org):
 
+Yarn
 ```
-$ npm i eslint --save-dev
+$ yarn add eslint --dev
+```
+
+NPM
+```
+$ npm install eslint --save-dev
 ```
 
 Next, install `eslint-plugin-no-generic-identifier`:
 
+Yarn
+```
+$ yarn add eslint-plugin-no-generic-identifier --dev
+```
+
+NPM
 ```
 $ npm install eslint-plugin-no-generic-identifier --save-dev
 ```
@@ -36,16 +48,24 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "no-generic-identifier/rule-name": 2
+        "no-generic-identifier/presentation": 2
     }
 }
 ```
 
-## Supported Rules
+***
 
-* Fill in provided rules here
-
-
+### Rule Example:
 
 
+Bad
 
+```js
+const Presentation = () => {}
+```
+
+Good
+
+```js
+const WhatActuallyThisMethodDoes = () => {}
+```
